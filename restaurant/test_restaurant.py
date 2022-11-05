@@ -4,10 +4,10 @@ from restaurant import find_top_foods, unique_orders
 
 
 class OrdersTestCase(unittest.TestCase):
-    """Tests for the "restaurant.py"."""
+    """tests for the "restaurant.py"""
 
     def test_duplicate_values(self):
-        """Do repetitive food orders exist."""
+        """do repetitive food orders exist"""
         the_log = {
             1: [["a", "b", "c"]],
             2: [["d", "e", "f"]],
