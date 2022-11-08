@@ -17,3 +17,8 @@ The children list in the Node class should be made specific to each node, but in
 In the original code, the same root.children list was getting looped in every recursive call.
 There will never be an empty list in any of the recursive calls.
 When we make the list specific to each node, the lowermost level of nodes will have empty children lists, and recursion won’t continue further.
+
+In other words, you could say that in the original code, the children variable referencing the children list is a class variable.
+So all the instances will refer to the same variable.
+The class variable must be changed to an instance variable. This can be done by moving that variable under the __init__ method and prefixing with the self keyword.
+
