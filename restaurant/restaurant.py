@@ -10,10 +10,12 @@ def main():
     }
 
     message = unique_orders(the_log)
-    print(message)
     if message != "error":
         top_foods = find_top_foods(the_log)
         print(top_foods)
+    else:
+        print(message)
+        
 
 
 def unique_orders(the_log):
